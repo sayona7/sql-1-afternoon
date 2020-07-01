@@ -129,3 +129,91 @@
 -- where favorite_color in ('yellow', 'purple');
 
 
+-- Table - orders:
+
+-- 1.
+-- create table orders (
+-- 	order_id serial,
+--   person_id integer,
+--   product_name varchar(100),
+--   product_price decimal,
+--   quantity integer
+-- );
+
+-- 2. 
+-- insert into orders (
+--   person_id,
+--   product_name,
+--   product_price,
+--   quantity
+-- ) values (
+-- 	1,
+--   'lipstick',
+--   9.50,
+--   2
+-- );
+
+-- insert into orders (
+--   person_id,
+--   product_name,
+--   product_price,
+--   quantity
+-- ) values (
+-- 	2,
+--   'shampoo',
+--   8.00,
+--   1
+-- );
+
+-- insert into orders (
+--   person_id,
+--   product_name,
+--   product_price,
+--   quantity
+-- ) values (
+-- 	2,
+--   'conditioner',
+--   8.50,
+--   1
+-- );
+
+-- insert into orders (
+--   person_id,
+--   product_name,
+--   product_price,
+--   quantity
+-- ) values (
+-- 	3,
+--   'perfume',
+--   25.00,
+--   1
+-- );
+
+-- insert into orders (
+--   person_id,
+--   product_name,
+--   product_price,
+--   quantity
+-- ) values (
+-- 	4,
+--   'cotton balls',
+--   11.00,
+--   3
+-- );
+
+-- 3.
+-- select sum(quantity)
+-- from orders;
+
+-- 4. 
+-- select sum(product_price * quantity)
+-- from orders;
+
+-- 5. 
+-- select sum(product_price * quantity)
+-- from orders
+-- where person_id = 2;
+
+
+
+
